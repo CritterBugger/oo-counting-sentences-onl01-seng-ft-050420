@@ -16,5 +16,6 @@ class String
 
   def count_sentences
     array = self.gsub("?", ".").gsub("!", ".").split(".")
+    return array.count {|x| x != ""}
   end
 end
